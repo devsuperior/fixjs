@@ -84,6 +84,4 @@ const terceirizados = funcionariosTerceirizados(dados);
 
 const custoTerceirizados = custoTotal(terceirizados);
 
-console.log(
-  "Custo total dos funcionarios terceirizados: R$ " + custoTerceirizados
-);
+console.log(`Custo total dos funcionários terceirizados: R$ ${custoTerceirizados.toFixed(2)}`);
