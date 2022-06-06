@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --color-dark-blue: #322a83;
+  --color-dark-blue-hover: #3b329c;
+  --color-blue: #4c3ed1;
+  --color-yellow: #ffbb3c;
+  --color-white: #fff;
+  --color-light-gray: #e5e5e5;
+  --color-gray: #5e5e5e;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  color: unset;
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--color-dark-blue);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+main {
+  background-color: var(--color-blue);
+  min-height: calc(100vh - 70px);
+  padding: 0 15px;
+}
+
+nav h1 {
+  color: var(--color-yellow);
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#calc-section {
+    padding: 20px 10px;
+}
+
+.calc-card {
+    border: 1px solid var(--color-dark-blue);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+
+.form-input {
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    color: var(--color-dark-blue);
+    background-color: var(--color-light-gray);
+    border: 0;
+    border-radius: 5px;
+    text-align: end;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-control label {
+    display: none;
+}
+
+.input-error {
+    border: 2px solid #e44b4b;
+    background-color: #ffdddd;
+}
+
+.result-container {
+    border: 1px solid var(--color-dark-blue);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: end;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-light-gray);
+}
+
+.buttons-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: var(--color-dark-blue);
+    width: 80px;
+    height: 60px;
+    color: var(--color-light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--color-dark-blue-hover);
+}
+
+.btn:active {
+    background-color: #ffbb3c;
+}
